@@ -65,7 +65,7 @@ def confirm_password(user_queue):
         
             if login_response.code == 200 and login_result.find('id="signInErrorDiv"') == -1:
                 print "login successful: username:%s  password: %s" % (post_tag['username'], post_tag['password'])
-                conn2 = psycopg2.connect(database = 'glodon', user = 'postgres', password = 'postgres', port = '5432', host = '192.168.70.36')
+                conn2 = psycopg2.connect(database = 'haha', user = 'postgres', password = 'postgres', port = '5432', host = '192.168.70.36')
                 cur2 = conn2.cursor()                
                 cur2.execute("update employee set password = '%s' where email = '%s'" % (password, ori_email))
                 conn2.commit()
