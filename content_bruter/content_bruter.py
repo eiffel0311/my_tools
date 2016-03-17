@@ -4,7 +4,7 @@ import Queue
 import urllib
 
 threads = 50
-target_url = "http://www.glodon.com"
+target_url = "http://www.test.com"
 wordlist_file = './svndigger-all.txt'
 resume = None
 user_agent = "Mozilla/5.0(X11; Linux x86_64; rv:19.0) Gecko/20100101Firefox/19.0"
